@@ -10,8 +10,8 @@ export const GifGrid = ({category}) => {
 
     return (
         <>
-        <h3>{category}</h3>
-        {loading && <p>Loading</p>}{/* otra forma de ternario si no queremos mostrar nada en el else */}
+        <h3 className="animate__animated animate__flash">{category}</h3>
+        {loading && <p className="animate__animated animate__flash">Loading</p>}{/* otra forma de ternario si no queremos mostrar nada en el else */}
         <div className="card-grid">
 
             {
